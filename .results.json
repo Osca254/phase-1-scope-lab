@@ -2,18 +2,18 @@
   "stats": {
     "suites": 6,
     "tests": 5,
-    "passes": 1,
+    "passes": 3,
     "pending": 0,
-    "failures": 4,
-    "start": "2022-08-18T16:24:56.706Z",
-    "end": "2022-08-18T16:24:57.187Z",
-    "duration": 481
+    "failures": 2,
+    "start": "2022-08-18T16:53:53.647Z",
+    "end": "2022-08-18T16:53:54.132Z",
+    "duration": 485
   },
   "tests": [
     {
       "title": "returns the customerName",
       "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -33,13 +33,13 @@
     {
       "title": "setBestCustomer",
       "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'not bob'",
+        "message": "expected 'maybe bob' to equal undefined",
         "showDiff": true,
-        "expected": "not bob",
-        "stack": "AssertionError: expected undefined to equal 'not bob'\n    at Context.<anonymous> (test/indexTest.js:23:38)\n    at processImmediate (internal/timers.js:461:21)"
+        "actual": "maybe bob",
+        "stack": "AssertionError: expected 'maybe bob' to equal undefined\n    at Context.<anonymous> (test/indexTest.js:19:38)\n    at processImmediate (internal/timers.js:461:21)"
       }
     },
     {
@@ -47,20 +47,14 @@
       "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: overwriteBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:29:7)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "overwriteBestCustomer is not defined"
-      }
+      "err": {}
     },
     {
       "title": "unsuccessfully tries to reassign the least favorite customer",
       "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: changeLeastFavoriteCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:37:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "changeLeastFavoriteCustomer is not defined"
-      }
+      "err": {}
     }
   ],
   "pending": [],
@@ -81,33 +75,13 @@
     {
       "title": "setBestCustomer",
       "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'not bob'",
+        "message": "expected 'maybe bob' to equal undefined",
         "showDiff": true,
-        "expected": "not bob",
-        "stack": "AssertionError: expected undefined to equal 'not bob'\n    at Context.<anonymous> (test/indexTest.js:23:38)\n    at processImmediate (internal/timers.js:461:21)"
-      }
-    },
-    {
-      "title": "overwrites the best customer",
-      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: overwriteBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:29:7)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "overwriteBestCustomer is not defined"
-      }
-    },
-    {
-      "title": "unsuccessfully tries to reassign the least favorite customer",
-      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: changeLeastFavoriteCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:37:14)\n    at processImmediate (internal/timers.js:461:21)",
-        "message": "changeLeastFavoriteCustomer is not defined"
+        "actual": "maybe bob",
+        "stack": "AssertionError: expected 'maybe bob' to equal undefined\n    at Context.<anonymous> (test/indexTest.js:19:38)\n    at processImmediate (internal/timers.js:461:21)"
       }
     }
   ],
@@ -115,6 +89,20 @@
     {
       "title": "returns the customerName",
       "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
       "duration": 1,
       "currentRetry": 0,
       "err": {}
